@@ -1,0 +1,215 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FF0000">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="健康资讯"
+                android:textSize="25dp"
+                android:textColor="#fff"/>
+
+            <ImageButton
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/refresh"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fenlie"
+            android:background="@drawable/boder"
+            android:layout_below="@id/top_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="资讯分类"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <View
+                android:layout_below="@id/info"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#000000"/>
+                />
+
+            <LinearLayout
+                android:layout_below="@id/info"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/yaopin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/health1"/>
+                <ImageButton
+                    android:layout_marginTop="1dp"
+                    android:id="@+id/xinli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/health2"/>
+                <ImageButton
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/manxingbing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/health3"/>
+                <ImageButton
+                    android:id="@+id/yangsheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/health4"/>
+                <ImageButton
+                    android:id="@+id/yundong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/health5"/>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="药品"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="心理"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="慢性病"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="养生"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="运动"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/fenlie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+
+            android:orientation="vertical"
+            android:background="@drawable/boder">
+
+        <TextView
+            android:id="@+id/hot_text"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="热点资讯"
+
+            />
+
+            <View
+                android:layout_below="@id/hot_text"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#000000"/>
+            />
+
+        <ListView
+            android:id="@+id/hot_news"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:dividerHeight="10dp"
+            android:background="#ffffff"
+
+
+            />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

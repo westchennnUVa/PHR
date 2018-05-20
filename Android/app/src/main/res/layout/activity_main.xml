@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/relative"
+    android:background="@drawable/beijing">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/fc_background_above"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="VIP个人应用"
+        android:id="@+id/textView"
+        android:textSize="60px"
+        android:layout_marginLeft="48dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:textColor="#ffffffff"/>
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:background="@drawable/fc_button1"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="个人PHR管理"
+            android:id="@+id/textView2"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="7dp"
+            android:textColor="#ffffffff"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton4"
+            android:background= "@drawable/fc_button4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="私人医生服务"
+            android:id="@+id/textView4"
+            android:layout_marginLeft="45dp"
+            android:textColor="#ffffffff"/>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/ll2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="60dp">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:background= "@drawable/fc_button3"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="个人健康体检"
+        android:id="@+id/textView5"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffffff"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton5"
+        android:background= "@drawable/fc_button5"
+        android:layout_marginTop="7dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="在线咨询论坛"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView6"
+        android:textColor="#ffffffff"/>
+</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

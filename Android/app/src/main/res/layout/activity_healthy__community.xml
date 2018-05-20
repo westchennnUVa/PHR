@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anthonysss.ui.Healthy_Community"
+    android:background="@drawable/beijing">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:background="@drawable/fc_background_above2"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="健康社区"
+        android:textSize="25dp"
+        android:textColor="#ffffffff"
+        android:id="@+id/textView18"
+        android:gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="33dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_below="@+id/imageView3"
+        android:id="@+id/linearLayout"
+        android:weightSum="2">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView1"
+            android:src="@drawable/fc_news"
+            android:scaleType="fitXY"
+            android:layout_weight="1"/>
+        <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/fc_comment"
+        android:id="@+id/imageView2"
+        android:scaleType="fitXY"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:id="@+id/imageViewmap"
+        android:src="@drawable/fc_map"
+        android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src = "@drawable/fc_registration"
+                android:id="@+id/imageView4"
+                android:scaleType="fitXY"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src ="@drawable/fc_record"
+                android:id="@+id/imageView5"
+                android:scaleType="fitXY"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

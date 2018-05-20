@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hospitals">
+        <item>华西医院</item>
+        <item>华北医院</item>
+        <item>华南医院</item>
+    </string-array>
+    <string-array name="keshi">
+        <item>儿科</item>
+        <item>神经科</item>
+        <item>牙科</item>
+    </string-array>
+    <string-array name="shijian">
+        <item>周一上午</item>
+        <item>周一下午</item>
+        <item>周二上午</item>
+        <item>周二下午</item>
+        <item>周三上午</item>
+        <item>周三下午</item>
+        <item>周四上午</item>
+        <item>周四下午</item>
+        <item>周五上午</item>
+        <item>周五下午</item>
+    </string-array>
+</resources>

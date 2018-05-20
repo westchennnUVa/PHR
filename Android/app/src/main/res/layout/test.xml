@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_list_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 主页列表点击后的详细页布局 -->
+
+
+    <!-- TOP BAR -->
+
+    <RelativeLayout
+        android:id="@+id/detail_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#EEE8AA" >
+
+        <!-- “返回”按钮 -->
+
+        <Button
+            android:id="@+id/detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+        <!-- 顶部“正文”的文本 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="正文" />
+
+        <!-- “分享”按钮 -->
+
+        <Button
+            android:id="@+id/detail_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="分享" />
+    </RelativeLayout>
+
+    <!-- 正文 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_top_bar"
+        android:paddingBottom="45dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 最上面的用户信息条 -->
+
+            <LinearLayout
+                android:id="@+id/main_list_detail_user_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp" >
+
+                <!-- 用户头像 -->
+
+                <ImageView
+                    android:id="@+id/main_list_detail_user_head"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <!-- 用户信息栏 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp" >
+
+                    <!-- 用户名称 -->
+
+                    <TextView
+                        android:id="@+id/main_list_detail_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp" />
+
+                    <!-- 发布时间 -->
+
+                    <TextView
+                        android:id="@+id/main_list_detail_user_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 发布的信息内容 -->
+
+            <TextView
+                android:id="@+id/main_list_detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp" />
+
+            <!-- 这是一条分割线 -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:background="#EEEED1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户评论"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp" />
+
+                <!-- 这是一条分割线 -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#EEEED1" />
+
+            </LinearLayout>
+            <!-- 用户的评论 -->
+
+            <ListView
+                android:id="@+id/pinglunqu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- bottom bar -->
+
+    <LinearLayout
+        android:id="@+id/detail_bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EEE8AA" >
+
+        <!-- “转发”按钮 -->
+
+        <Button
+            android:id="@+id/detail_zhuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="转发(0)" />
+
+        <!-- “评论”按钮 -->
+
+        <Button
+            android:id="@+id/detail_linglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="评论(0)" />
+
+        <!-- “点赞”按钮 -->
+
+        <Button
+            android:id="@+id/detail_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="点赞(0)" />
+    </LinearLayout>
+
+</RelativeLayout>

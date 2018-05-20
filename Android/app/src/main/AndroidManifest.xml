@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.westchen.phr" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+    <meta-data
+        android:name="com.baidu.lbsapi.API_KEY"
+        android:value="GjEutopaeZNGH7yEpPC59u0l"
+        />
+        <activity android:name="mating.MeiActivity" />
+        <activity
+            android:name="mating.WelcomePageActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity_cxh"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <!--PersonalDr的manifest-->
+        <activity
+            android:name="personalDr.all_Dr_list"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name="personalDr.chat_record"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name="personalDr.detail_of_chat"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name="personalDr.dr_list"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name="personalDr.ffd_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity android:name="personalDr.ffd2_MainActivity"/>
+
+        <!--map的activity-->
+        <activity
+        android:name="map.map_MainActivity"
+        android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name=".PHR_info_display"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="mating.MainPage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="mating.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="mating.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="mating.DoctorRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="mating.NormalUserRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="mating.DoctorRegister2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="mating.Drug" />
+        <activity android:name="mating.Sport" />
+        <activity android:name="mating.Mentality" />
+        <activity android:name="mating.Regimen" />
+        <activity android:name="mating.Chronic" />
+        <activity android:name="mating.MessageContent" />
+        <activity android:name="mating.BaseFragment">
+        </activity>
+        <activity android:name="tijianguahao.EDataManager"/>
+        <activity android:name="tijianguahao.ExaminationActivity"/>
+        <activity android:name="tijianguahao.SelfExaminationActivity"/>
+        <activity android:name="tijianguahao.SpinnerControl"/>
+        <activity android:name="tijianguahao.RegistrationActivity"/>
+        <activity android:name="tijianguahao.RegistrationDataManager"/>
+
+        <activity
+            android:name="forum3.AnswerActivity">
+        </activity>
+
+        <activity
+            android:name="forum3.AddQuestionActivity">
+        </activity>
+
+        <activity
+            android:name="forum3.MyTActivity">
+        </activity>
+        <activity
+            android:name="forum3.OnLineForumActivity"/>
+
+        <activity android:name="healthnews.HealthNewsActivity"/>
+        <activity android:name="healthnews.HealthNewsAnswerActivity"/>
+        <activity android:name="healthnews.NewsDataManager"/>
+        <activity android:name="fengchuang.My_Orders"/>
+        <activity android:name="fengchuang.My_Balance"/>
+        <activity android:name="fengchuang.Personal_Data"/>
+        <activity android:name="fengchuang.My_Comment"/>
+        <activity android:name="fengchuang.Security"/>
+
+        <activity android:name="treatmentRecord.TreatmentActivity"/>
+        <activity android:name="treatmentRecord.TreatmentDataManager"/>
+        <activity android:name="treatmentRecord.TreatmentInfoActivity"/>
+        <activity android:name="item.DrugItem1"/>
+        <activity android:name="item.DrugItem2"/>
+        <activity android:name="item.DrugItem3"/>
+        <activity android:name="item.DrugItem4"/>
+        <activity android:name="item.ChronicItem1"/>
+        <activity android:name="item.ChronicItem2"/>
+        <activity android:name="item.ChronicItem3"/>
+        <activity android:name="item.ChronicItem4"/>
+        <activity android:name="item.MentalityItem1"/>
+        <activity android:name="item.MentalityItem2"/>
+        <activity android:name="item.MentalityItem3"/>
+        <activity android:name="item.MentalityItem4"/>
+        <activity android:name="item.SportItem1"/>
+        <activity android:name="item.SportItem2"/>
+        <activity android:name="item.SportItem3"/>
+        <activity android:name="item.SportItem4"/>
+        <activity android:name="item.RegimenItem1"/>
+        <activity android:name="item.RegimenItem2"/>
+        <activity android:name="item.RegimenItem3"/>
+        <activity android:name="item.RegimenItem4"/>
+
+    </application>
+
+    <server android:name="com.baidu.location.f"
+        android:enabled="true"
+        android:process=":remote">
+    </server>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- 我们会自己定义listview的显示方式（在另外一个布局文件里边）不用默认的方式
+       如果自定义listview的显示方式这里这个android:id="@id/android:list" 必须这样写 -->
+    <!-- android:drawSelectOnTop="false"此属性用来设置listview上的背景颜色会不会
+     挡住（覆盖）内容 , 如果这是为false就表示不会覆盖掉 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ffd_qwert"
+        android:adjustViewBounds="true" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textClock"
+        android:layout_gravity="right" />
+
+    <ExpandableListView
+        android:id="@id/android:list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:drawSelectorOnTop="false"
+        android:layout_marginTop="0dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="添加医生"
+        android:id="@+id/button1"
+
+        android:onClick="dr_list_click1" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除医生"
+        android:id="@+id/button2"
+        android:onClick="dr_list_click12" android:layout_weight="1"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除分组"
+        android:id="@+id/button3"
+        android:onClick="dr_list_click13" android:layout_weight="1"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="管理分组"
+        android:id="@+id/button"
+        android:onClick="dr_list_click" android:layout_weight="1"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/button4"
+        android:onClick="dr_list_click14"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+
+
